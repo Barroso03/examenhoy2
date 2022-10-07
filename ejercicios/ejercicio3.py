@@ -1,5 +1,5 @@
 class Producto():
-    print("Ejercicio3:")
+    
     def __init__(self, codigo, nombre, precio, tipo):
         self.codigo = codigo
         self.nombre = nombre

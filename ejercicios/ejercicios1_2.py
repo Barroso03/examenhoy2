@@ -1,5 +1,5 @@
 class Alumno():
-    print("Ejercicio1y2:")
+    
     def __init__(self, nombre, nota):
         self.nombre = nombre
         self.nota = nota

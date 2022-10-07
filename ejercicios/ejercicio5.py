@@ -1,5 +1,8 @@
+
+
+
 class Vehiculo():
-    print("Ejercicio5:")
+    
 
     def __init__(self, color, ruedas):
         self.color = color
@@ -59,3 +62,26 @@ class motocicleta(Coche):
 
     def __str__(self):
         return Coche.__str__(self) + ", {}".format(self.tipo)
+M = motocicleta("negra", 2, 200, 600, "deportiva")
+
+
+
+
+
+def catalogar(vehiculos, ruedas):
+    for v in vehiculos:
+          print(v.__class__.__name__, v)
+          if v.ruedas == ruedas:
+              print("Tiene {} ruedas".format(ruedas))
+          else:
+              print("No tiene {} ruedas".format(ruedas)) 
+    
+    h = int(input("Introduce el numero de ruedas: "))
+    if h == 2:
+          catalogar([ b, m],h)
+    elif h == 4:
+          catalogar([c, r],h)
+    elif h == 0:
+          catalogar([c, b, r, m],h)
+    else:
+           print("No hay vehiculos con {} ruedas".format(h))
